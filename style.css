@@ -1,0 +1,57 @@
+p {
+    color: grey
+}
+
+h1 {
+    color: rgb(187, 159, 1);
+}
+
+h2 {
+    color: rgb(166, 126, 25);
+}
+
+footer {
+    color: rgb(33, 145, 214);
+}
+
+body {
+    background-color: rgb(159, 186, 186);
+}
+
+body {
+    color: rgb(71, 106, 134);
+}
+
+
+body {
+    margin: 0;
+    text-align: center;
+}
+
+
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    margin: 0 auto;
+}
+
+
+img.fullscreen {
+    width: 100%;
+}
+
+img {
+    margin-bottom: 40px;
+}
+
+img {
+    margin-top: 40px;
+}
+
+@font-face {
+    font-family: 'MeineSchrift';
+    src: url('fonts/meine-schrift.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
