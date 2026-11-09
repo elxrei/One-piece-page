@@ -1,0 +1,18 @@
+<!doctype html><html lang="de"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Grand Line Archive · One Piece Fanprojekt</title>
+<!-- DESIGN: Alle Farben, Schriften und Abstände stehen in style.css. -->
+<link rel="stylesheet" href="style.css">
+<!-- REIHENFOLGE BEIBEHALTEN: erst deine Daten, dann die Funktionen laden. -->
+<script src="daten.js" defer></script>
+<script src="script.js" defer></script></head><body><a class="skip" href="#main">Zum Inhalt</a>
+<!-- KOPFZEILE: Logo, Navigation und Spoiler-Schalter. Bei Änderungen auf allen 3 Seiten anpassen. -->
+<header><a class="brand" href="index.html"><span class="brand-icon">✦</span> GRAND LINE <small>THE FAN ARCHIVE</small></a><nav aria-label="Hauptnavigation"><a href="index.html">Start</a><a href="charaktere.html">Charaktere & Crews</a><a href="welt.html">Welt & Früchte</a></nav><label class="spoiler"><input id="spoilers" type="checkbox"> Spoiler erlauben</label><a href="https://onepiecedle.net" class="quiz-link">One Piece Quiz</a></header>
+<!-- SEITENINHALT: Texte und Überschriften dieser Seite kannst du direkt hier ändern. -->
+<main id="main"><section class="hero"><div class="hero-copy"><p class="eyebrow">DAS INOFFIZIELLE ONE-PIECE-ARCHIV</p><h1>DEIN KURS.<br>DEIN <em>ABENTEUER.</em></h1><p class="intro">Jede Crew hat eine Geschichte. Jede Insel ein Geheimnis.<br>Entdecke die Welt hinter dem Strohhut.</p><a class="button" href="charaktere.html">Die Crews entdecken <span>↗</span></a><p class="micro">CHARAKTERE / TEUFELSFRÜCHTE / ORTE</p></div><!-- STARTBILD: Den Dateipfad unter STARTBILD in daten.js eintragen.
+       Ohne eigenes Bild bleibt der dekorative Kompass sichtbar. -->
+<div class="chart" id="hero-visual"><div id="hero-fallback" role="img" aria-label="Dekorative Seekarte mit Kompass"><span class="north"></span><div class="compass">✦</div><span class="chart-label">THE GRAND LINE<br><small>DEIN FAN-ARCHIV</small></span></div></div></section><section class="section"><div class="section-heading"><div><p class="eyebrow">WÄHLE DEINEN KURS</p><h2>Eine Welt. Unzählige Geschichten.</h2></div><span class="issue">ARCHIVE / 001</span></div><div class="category-grid"><a class="category red" href="charaktere.html"><span>01 / DIE MENSCHEN</span><h3>Charaktere<br>& Crews</h3><span class="arrow">↗</span></a><a class="category gold" href="welt.html#fruechte"><span>02 / DIE KRÄFTE</span><h3>Teufels-<br>früchte</h3><span class="arrow">↗</span></a><a class="category blue" href="welt.html#orte"><span>03 / DIE REISE</span><h3>Inseln<br>& Orte</h3><span class="arrow">↗</span></a></div></section><!-- VERÖFFENTLICHUNGEN: Titel, Datum, Bild und Link in daten.js unter RELEASES bearbeiten.
+     Die Einträge werden MANUELL gepflegt. Es gibt keine automatische Live-Abfrage. -->
+<section class="section releases"><div><p class="eyebrow">ANIME & MANGA</p><h2>Das Abenteuer geht weiter.</h2><p>Deine manuell gepflegten Episoden- und Kapitelhinweise.</p></div><div id="release-cards" class="release-cards"></div></section></main>
+<!-- FUSSZEILE: auf allen drei Seiten gleich halten. -->
+<footer><a class="brand" href="index.html">✦ GRAND LINE ARCHIVE</a><p>Inoffizielles One-Piece-Fanprojekt · Lernprototyp</p><p>One Piece: Eiichirō Oda / Shueisha. Keine offizielle Verbindung.</p></footer>
+<!-- DETAILFENSTER: Wird von script.js mit dem angeklickten Eintrag gefüllt. -->
+<dialog id="details" aria-labelledby="detail-title"><button class="close" aria-label="Details schliessen">×</button><div id="detail-content"></div></dialog></body></html>

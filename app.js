@@ -8,7 +8,7 @@
 
 // 1. STARTBILD – bild: "bilder/startseite/crew.jpg"
 const STARTBILD = {
-  bild: "", // HIER z. B. "bilder/startseite/crew.jpg" eintragen.
+  bild: "bilder/one piece.jpeg", // HIER z. B. "bilder/startseite/crew.jpg" eintragen.
   alt: "Die Strohhut-Crew auf einem gemeinsamen Abenteuer",
   position: "center" // Ausschnitt: "center", "top" oder z. B. "50% 30%".
 };
@@ -18,31 +18,31 @@ const RELEASES = [
   {
     typ: "ANIME", titel: "Neueste Episode", nummer: "", datum: "",
     beschreibung: "Folgentitel und Veröffentlichungsdatum hier ergänzen.",
-    url: "", // HIER den vollständigen https://-Link zum legalen Anbieter eintragen.
+    url: "https://www.crunchyroll.com/de/series/GRMG8ZQZR/one-piece?utm_source=google&utm_medium=paid_cr&utm_campaign=CR_SV_EURO_DEU_DE_FTD_SEM_SEG_WEB_GENERIC-TITLES-LONGTAIL&utm_term=one%20piece&referrer=google_paid_cr_CR_SV_EURO_DEU_DE_FTD_SEM_SEG_WEB_GENERIC-TITLES-LONGTAIL&gad_source=1&gad_campaignid=23593274618&gbraid=0AAAAADmLVRZdtnSqAocktyLx3Cn_WC5R-&gclid=Cj0KCQiA-8XXBhDaARIsADnEOrDG6kK16wpGXsXhbq8yVpVz3Bh4JE7ElzpFUJvtfghRQpRtcPpt7V4aAu9eEALw_wcB",
     linktext: "Episode beim Anbieter öffnen ↗",
-    bild: "", // z. B. "bilder/startseite/anime.jpg"
+    bild: "bilder/ruffy anime.jpg",
     alt: "Vorschaubild der Anime-Episode",
     spoiler: false // Bei spoilerhaltigem Titel ODER Vorschaubild auf true setzen.
   },
   {
     typ: "MANGA", titel: "Neuestes Kapitel", nummer: "", datum: "",
     beschreibung: "Kapitelnummer und Veröffentlichungsdatum hier ergänzen.",
-    url: "", // HIER den vollständigen https://-Link zum offiziellen Manga-Anbieter eintragen.
+    url: "https://mangaplus.shueisha.co.jp/titles/800001",
     linktext: "Manga beim Anbieter lesen ↗",
-    bild: "", // z. B. "bilder/startseite/manga.jpg"
+    bild: "bilder/ruffy manga.jpeg",
     alt: "Vorschaubild des Manga-Kapitels",
     spoiler: false
   }
 ];
 
-// 3. CREWS – id muss zum Feld crew bei den Charakteren passen.
+// 3. CREWS – 
 const CREWS = [
   {
     "id": "strohhut",
     "name": "Strohhut-Piraten",
     "kapitaen": "Ruffy",
     "beschreibung": "Eine Crew mit ganz unterschiedlichen Träumen.",
-    "bild": "",
+    "bild": "bilder/Strohut crew",
     "alt": "Motiv der Strohhut-Piraten",
     "spoiler": false
   },
@@ -51,7 +51,7 @@ const CREWS = [
     "name": "Rothaar-Piraten",
     "kapitaen": "Shanks",
     "beschreibung": "Die Piratenbande rund um Shanks.",
-    "bild": "",
+    "bild": "bilder/rothaar piraten.jpg",
     "alt": "Motiv der Rothaar-Piraten",
     "spoiler": false
   },
@@ -60,7 +60,7 @@ const CREWS = [
     "name": "Heart-Piraten",
     "kapitaen": "Trafalgar Law",
     "beschreibung": "Die Crew von Trafalgar Law.",
-    "bild": "",
+    "bild": "bilder/heart piraten.webp",
     "alt": "Motiv der Heart-Piraten",
     "spoiler": false
   },
@@ -69,7 +69,7 @@ const CREWS = [
     "name": "Kid-Piraten",
     "kapitaen": "Eustass Kid",
     "beschreibung": "Die Piratenbande rund um Kid.",
-    "bild": "",
+    "bild": "bilder/kid crew.jpeg",
     "alt": "Motiv der Kid-Piraten",
     "spoiler": true
   },
@@ -78,7 +78,7 @@ const CREWS = [
     "name": "Whitebeard-Piraten",
     "kapitaen": "Whitebeard",
     "beschreibung": "Eine grosse Piratenbande mit Whitebeard als Kapitän.",
-    "bild": "",
+    "bild": "bilder/whitebeard crew.webp",
     "alt": "Motiv der Whitebeard-Piraten",
     "spoiler": false
   },
@@ -87,7 +87,7 @@ const CREWS = [
     "name": "Blackbeard-Piraten",
     "kapitaen": "Marshall D. Teach",
     "beschreibung": "Die Piratenbande rund um Blackbeard.",
-    "bild": "",
+    "bild": "bilder/Blackbeard_Pirates.webp",
     "alt": "Motiv der Blackbeard-Piraten",
     "spoiler": true
   }
@@ -101,7 +101,7 @@ const CHARAKTERE = [
     "crew": "strohhut",
     "rolle": "Kapitän",
     "beschreibung": "Ruffy träumt davon, König der Piraten zu werden.",
-    "bild": "",
+    "bild": "bilder/luffy.webp",
     "alt": "Porträt von Monkey D. Ruffy",
     "spoiler": false,
     "quelle": ""
@@ -112,7 +112,7 @@ const CHARAKTERE = [
     "crew": "strohhut",
     "rolle": "Schwertkämpfer",
     "beschreibung": "Zorro möchte der beste Schwertkämpfer der Welt werden.",
-    "bild": "",
+    "bild": "bilder/zorro.jpg",
     "alt": "Porträt von Lorenor Zorro",
     "spoiler": false,
     "quelle": ""
@@ -123,7 +123,7 @@ const CHARAKTERE = [
     "crew": "strohhut",
     "rolle": "Navigatorin",
     "beschreibung": "Nami träumt von einer Karte der ganzen Welt.",
-    "bild": "",
+    "bild": "bilder/nami.webp",
     "alt": "Porträt von Nami",
     "spoiler": false,
     "quelle": ""
@@ -134,7 +134,7 @@ const CHARAKTERE = [
     "crew": "strohhut",
     "rolle": "Schütze",
     "beschreibung": "Lysop möchte ein mutiger Krieger der Meere werden.",
-    "bild": "",
+    "bild": "bilder/lysop.webp",
     "alt": "Porträt von Lysop",
     "spoiler": false,
     "quelle": ""
@@ -145,7 +145,7 @@ const CHARAKTERE = [
     "crew": "strohhut",
     "rolle": "Koch",
     "beschreibung": "Sanji sucht den legendären All Blue.",
-    "bild": "",
+    "bild": "bilder/Vinsmoke_Sanji.webp",
     "alt": "Porträt von Sanji",
     "spoiler": false,
     "quelle": ""
@@ -156,7 +156,7 @@ const CHARAKTERE = [
     "crew": "strohhut",
     "rolle": "Arzt",
     "beschreibung": "Chopper kümmert sich um die Gesundheit seiner Freunde.",
-    "bild": "",
+    "bild": "bilder/Tony_Tony_Chopper.webp",
     "alt": "Porträt von Tony Tony Chopper",
     "spoiler": false,
     "quelle": ""
@@ -167,7 +167,7 @@ const CHARAKTERE = [
     "crew": "strohhut",
     "rolle": "Archäologin",
     "beschreibung": "Robin interessiert sich für die verborgene Geschichte der Welt.",
-    "bild": "",
+    "bild": "bilder/nico robin.jpg",
     "alt": "Porträt von Nico Robin",
     "spoiler": false,
     "quelle": ""
@@ -178,7 +178,7 @@ const CHARAKTERE = [
     "crew": "strohhut",
     "rolle": "Schiffszimmermann",
     "beschreibung": "Franky ist ein Schiffsbauer und Cyborg.",
-    "bild": "",
+    "bild": "bilder/franky.avif",
     "alt": "Porträt von Franky",
     "spoiler": true,
     "quelle": ""
@@ -189,7 +189,7 @@ const CHARAKTERE = [
     "crew": "strohhut",
     "rolle": "Musiker",
     "beschreibung": "Brook ist Musiker und Schwertkämpfer.",
-    "bild": "",
+    "bild": "bilder/brook.avif",
     "alt": "Porträt von Brook",
     "spoiler": true,
     "quelle": ""
@@ -200,7 +200,7 @@ const CHARAKTERE = [
     "crew": "strohhut",
     "rolle": "Steuermann",
     "beschreibung": "Jinbei ist ein Fischmensch und erfahrener Kämpfer.",
-    "bild": "",
+    "bild": "bilder/Jinbe.webp",
     "alt": "Porträt von Jinbei",
     "spoiler": true,
     "quelle": ""
@@ -211,7 +211,7 @@ const CHARAKTERE = [
     "crew": "rothaar",
     "rolle": "Kapitän",
     "beschreibung": "Shanks ist ein wichtiges Vorbild für Ruffy.",
-    "bild": "",
+    "bild": "bilder/shanks.jpeg",
     "alt": "Porträt von Shanks",
     "spoiler": false,
     "quelle": ""
@@ -222,7 +222,7 @@ const CHARAKTERE = [
     "crew": "rothaar",
     "rolle": "Crewmitglied",
     "beschreibung": "Benn Beckman gehört zu Shanks’ engsten Vertrauten.",
-    "bild": "",
+    "bild": "bilder/Benn_Beckman_Anime_Infobox.webp",
     "alt": "Porträt von Benn Beckman",
     "spoiler": false,
     "quelle": ""
@@ -233,7 +233,7 @@ const CHARAKTERE = [
     "crew": "heart",
     "rolle": "Kapitän",
     "beschreibung": "Law ist ein Arzt und Kapitän der Heart-Piraten.",
-    "bild": "",
+    "bild": "bilder/law.jpg",
     "alt": "Porträt von Trafalgar Law",
     "spoiler": true,
     "quelle": ""
@@ -244,7 +244,7 @@ const CHARAKTERE = [
     "crew": "heart",
     "rolle": "Navigator",
     "beschreibung": "Bepo ist ein Mink und Teil der Heart-Piraten.",
-    "bild": "",
+    "bild": "bilder/bepo.jpeg",
     "alt": "Porträt von Bepo",
     "spoiler": true,
     "quelle": ""
@@ -255,7 +255,7 @@ const CHARAKTERE = [
     "crew": "kid",
     "rolle": "Kapitän",
     "beschreibung": "Kid ist Kapitän der Kid-Piraten.",
-    "bild": "",
+    "bild": "bilder/kid.avif",
     "alt": "Porträt von Eustass Kid",
     "spoiler": true,
     "quelle": ""
@@ -266,7 +266,7 @@ const CHARAKTERE = [
     "crew": "kid",
     "rolle": "Kämpfer",
     "beschreibung": "Killer kämpft an der Seite von Eustass Kid.",
-    "bild": "",
+    "bild": "bilder/killer.jpg",
     "alt": "Porträt von Killer",
     "spoiler": true,
     "quelle": ""
@@ -277,7 +277,7 @@ const CHARAKTERE = [
     "crew": "whitebeard",
     "rolle": "Kapitän",
     "beschreibung": "Edward Newgate ist unter dem Namen Whitebeard bekannt.",
-    "bild": "",
+    "bild": "bilder/whitebeard.jpeg",
     "alt": "Porträt von Whitebeard",
     "spoiler": true,
     "quelle": ""
@@ -288,7 +288,7 @@ const CHARAKTERE = [
     "crew": "whitebeard",
     "rolle": "Kommandant",
     "beschreibung": "Marco gehört zu den bekanntesten Mitgliedern der Whitebeard-Piraten.",
-    "bild": "",
+    "bild": "bilder/marco.jpg",
     "alt": "Porträt von Marco",
     "spoiler": true,
     "quelle": ""
@@ -299,7 +299,7 @@ const CHARAKTERE = [
     "crew": "whitebeard",
     "rolle": "Kommandant",
     "beschreibung": "Ace ist als Feuerfaust bekannt.",
-    "bild": "",
+    "bild": "bilder/Ace.webp",
     "alt": "Porträt von Portgas D. Ace",
     "spoiler": true,
     "quelle": ""
@@ -310,7 +310,7 @@ const CHARAKTERE = [
     "crew": "blackbeard",
     "rolle": "Kapitän",
     "beschreibung": "Teach ist unter dem Namen Blackbeard bekannt.",
-    "bild": "",
+    "bild": "bilder/Blackbeard.jpg.webp",
     "alt": "Porträt von Marshall D. Teach",
     "spoiler": true,
     "quelle": ""
@@ -324,7 +324,7 @@ const FRUECHTE = [
     "name": "Gum-Gum-Frucht",
     "rolle": "Gummiartige Kräfte",
     "beschreibung": "Ruffys Körper erhält gummiartige Eigenschaften. Der Eintrag beschränkt sich auf die frühe Darstellung.",
-    "bild": "",
+    "bild": "bilder/gum gum frucht.webp",
     "alt": "Gum-Gum-Frucht",
     "spoiler": false,
     "quelle": ""
@@ -334,7 +334,7 @@ const FRUECHTE = [
     "name": "Feuer-Frucht",
     "rolle": "Feuerkräfte",
     "beschreibung": "Ermöglicht es, Feuer zu erzeugen und zu kontrollieren.",
-    "bild": "",
+    "bild": "bilder/Mera_Mera_no_Mi.webp",
     "alt": "Feuer-Frucht",
     "spoiler": false,
     "quelle": ""
@@ -344,7 +344,7 @@ const FRUECHTE = [
     "name": "Trenn-Trenn-Frucht",
     "rolle": "Geteilter Körper",
     "beschreibung": "Ermöglicht es, den Körper in getrennte Teile aufzuspalten.",
-    "bild": "",
+    "bild": "bilder/trenn trenn frucht.webp",
     "alt": "Trenn-Trenn-Frucht",
     "spoiler": false,
     "quelle": ""
@@ -358,7 +358,7 @@ const ORTE = [
     "name": "East Blue",
     "rolle": "Meer",
     "beschreibung": "Hier beginnt Ruffys Reise.",
-    "bild": "",
+    "bild": "bilder/EastBlueMap.webp",
     "alt": "Motiv aus dem East Blue",
     "spoiler": false,
     "quelle": ""
@@ -368,7 +368,7 @@ const ORTE = [
     "name": "Water Seven",
     "rolle": "Stadt",
     "beschreibung": "Eine von Wasserwegen geprägte Stadt, die für ihren Schiffbau bekannt ist.",
-    "bild": "",
+    "bild": "bilder/water seven.jpeg",
     "alt": "Stadtansicht von Water Seven",
     "spoiler": true,
     "quelle": ""
@@ -378,7 +378,7 @@ const ORTE = [
     "name": "Alabasta",
     "rolle": "Königreich",
     "beschreibung": "Ein Königreich mit weiten Wüstenlandschaften.",
-    "bild": "",
+    "bild": "bilder/Arabasta_Kingdom_Infobox.webp",
     "alt": "Landschaft von Alabasta",
     "spoiler": true,
     "quelle": ""
@@ -443,7 +443,7 @@ function media(item, folder, fallbackName) {
   const image = element('img', 'media-image');
   image.alt = item.alt || item.name || fallbackName || '';
   image.loading = 'lazy';
-  image.addEventListener('error', placeholder, {once: true});
+  image.addEventListener('error', placeholder, { once: true });
   image.src = item.bild;
   wrap.append(image);
   return wrap;
@@ -452,7 +452,7 @@ function media(item, folder, fallbackName) {
 // 10. SPOILER-SCHALTER: beeinflusst Karten, Crews und Veröffentlichungen.
 // Daten sind trotzdem in daten.js lesbar. Dies ist eine Anzeigehilfe, kein Zugriffsschutz.
 const spoilerInput = document.querySelector('#spoilers');
-try { spoilerInput.checked = localStorage.getItem('op-spoilers') === 'true'; } catch {}
+try { spoilerInput.checked = localStorage.getItem('op-spoilers') === 'true'; } catch { }
 function visible(item) { return !item.spoiler || spoilerInput.checked; }
 function crewFor(id) { return CREWS.find(crew => crew.id === id); }
 function characterVisible(item) {
@@ -542,7 +542,7 @@ function renderCrews() {
       select.value = crew.id; document.querySelector('#search').value = '';
       filterCharacters();
       document.querySelector('#search').focus();
-      characterGrid.scrollIntoView({block:'start', behavior: window.matchMedia('(prefers-reduced-motion: reduce)').matches ? 'auto' : 'smooth'});
+      characterGrid.scrollIntoView({ block: 'start', behavior: window.matchMedia('(prefers-reduced-motion: reduce)').matches ? 'auto' : 'smooth' });
     });
     card.append(button); grid.append(card);
   });
@@ -599,8 +599,12 @@ function refresh() {
   }
 }
 spoilerInput.addEventListener('change', () => {
-  try { localStorage.setItem('op-spoilers', String(spoilerInput.checked)); } catch {}
+  try { localStorage.setItem('op-spoilers', String(spoilerInput.checked)); } catch { }
   if (dialog.open) dialog.close();
   refresh();
 });
 refresh();
+
+document.getElementById("myButton").addEventListener("click", () => {
+  alert("Hello from eiichirō oda");
+});

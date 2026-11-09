@@ -1,0 +1,1 @@
+Hier deine Bilder ablegen. Kleinbuchstaben, keine Leerzeichen, z. B. ruffy.jpg. Dateipfad anschliessend in daten.js eintragen. Die Dateiendung muss stimmen: .jpg ist nicht .png.

@@ -1,0 +1,18 @@
+<!doctype html><html lang="de"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Grand Line Archive · One Piece Fanprojekt</title>
+<!-- DESIGN: Alle Farben, Schriften und Abstände stehen in style.css. -->
+<link rel="stylesheet" href="style.css">
+<!-- REIHENFOLGE BEIBEHALTEN: erst deine Daten, dann die Funktionen laden. -->
+<script src="daten.js" defer></script>
+<script src="script.js" defer></script></head><body><a class="skip" href="#main">Zum Inhalt</a>
+<!-- KOPFZEILE: Logo, Navigation und Spoiler-Schalter. Bei Änderungen auf allen 3 Seiten anpassen. -->
+<header><a class="brand" href="index.html"><span class="brand-icon">✦</span> GRAND LINE <small>THE FAN ARCHIVE</small></a><nav aria-label="Hauptnavigation"><a href="index.html">Start</a><a href="charaktere.html">Charaktere & Crews</a><a href="welt.html">Welt & Früchte</a></nav><label class="spoiler"><input id="spoilers" type="checkbox"> Spoiler erlauben</label></header>
+<!-- SEITENINHALT: Texte und Überschriften dieser Seite kannst du direkt hier ändern. -->
+<main id="main"><section class="page-title"><p class="eyebrow">ARCHIVE / 01</p><h1>DIE GESICHTER<br>DER <em>GRAND LINE.</em></h1><p>Entdecke Charaktere und ihre Crews. Wähle eine Karte für mehr Details.</p></section><!-- CREW-KARTEN: Neue Crew in daten.js hinzufügen; erscheint hier automatisch. -->
+<section class="section"><p class="eyebrow">DIE PIRATENBANDEN</p><h2>Crews entdecken</h2><p>Wähle eine Crew, um ihre Beispielcharaktere zu sehen.</p><div id="crews" class="crew-grid"></div></section>
+<!-- CHARAKTERE: Suche und Filter werden in script.js verbunden. -->
+<section class="section"><div class="tools"><label class="search">Charakter suchen<input id="search" type="search" placeholder="Zum Beispiel: Ruffy"></label><label>Crew<!-- Optionen werden automatisch aus CREWS in daten.js erzeugt. -->
+<select id="crew"><option value="all">Alle Crews</option></select></label></div><p id="result-count" class="micro" aria-live="polite"></p><div id="characters" class="cards"></div><p id="empty" hidden>Kein Treffer. Versuche einen anderen Namen oder eine andere Crew.</p></section></main>
+<!-- FUSSZEILE: auf allen drei Seiten gleich halten. -->
+<footer><a class="brand" href="index.html">✦ GRAND LINE ARCHIVE</a><p>Inoffizielles One-Piece-Fanprojekt · Lernprototyp</p><p>One Piece: Eiichirō Oda / Shueisha. Keine offizielle Verbindung.</p></footer>
+<!-- DETAILFENSTER: Wird von script.js mit dem angeklickten Eintrag gefüllt. -->
+<dialog id="details" aria-labelledby="detail-title"><button class="close" aria-label="Details schliessen">×</button><div id="detail-content"></div></dialog></body></html>
