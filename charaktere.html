@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="de">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Charaktere & Crews · Grand Line Archive</title>
+  <link rel="stylesheet" href="style.css">
+  <!-- Nur noch EINE JavaScript-Datei: Daten oben, Funktionen darunter. -->
+  <script src="app.js" defer></script>
+</head>
+
+<body>
+  <a class="skip" href="#main">Zum Inhalt</a>
+  <!-- Navigation, Quiz-Link und Spoiler-Schalter: einmal zentral in app.js ändern. -->
+  <header id="site-header"></header>
+
+  <!-- HIER bearbeitest du die Überschriften und Inhalte dieser Seite. -->
+  <main id="main">
+    <section class="page-title">
+      <p class="eyebrow">ARCHIVE / 01</p>
+      <h1>DIE GESICHTER<br>DER <em>GRAND LINE.</em>
+      </h1>
+      <p>Entdecke Charaktere und ihre Crews. Wähle eine Karte für mehr Details.</p>
+    </section>
+    <section class="section">
+      <p class="eyebrow">DIE PIRATENBANDEN</p>
+      <h2>Crews entdecken</h2>
+      <p>Wähle eine Crew, um ihre Beispielcharaktere zu sehen.</p>
+      <div id="crews" class="crew-grid">
+      </div>
+    </section>
+    <section class="section">
+      <div class="tools">
+        <label class="search">Charakter suchen<input id="search" type="search" placeholder="Zum Beispiel: Ruffy">
+        </label>
+        <label>Crew
+          <select id="crew">
+            <option value="all">Alle Crews</option>
+          </select>
+        </label>
+      </div>
+      <p id="result-count" class="micro" aria-live="polite">
+      </p>
+      <div id="characters" class="cards">
+      </div>
+      <p id="empty" hidden>Kein Treffer. Versuche einen anderen Namen oder eine andere Crew.</p>
+    </section>
+  </main>
+
+  <!-- Fusszeile und Detailfenster werden ebenfalls zentral eingesetzt. -->
+  <footer id="site-footer"></footer>
+  <dialog id="details" aria-labelledby="detail-title">
+    <button class="close" type="button" aria-label="Details schliessen">×</button>
+    <div id="detail-content"></div>
+  </dialog>
+  <noscript>Bitte aktiviere JavaScript für Navigation, Karten, Suche und Filter. Die drei Seiten: <a
+      href="index.html">Start</a>, <a href="charaktere.html">Charaktere & Crews</a>, <a href="welt.html">Welt &
+      Früchte</a>.</noscript>
+</body>
+
+</html>

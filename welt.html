@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="de">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Welt & Früchte · Grand Line Archive</title>
+  <link rel="stylesheet" href="style.css">
+  <!-- Nur noch EINE JavaScript-Datei: Daten oben, Funktionen darunter. -->
+  <script src="app.js" defer></script>
+</head>
+
+<body>
+  <a class="skip" href="#main">Zum Inhalt</a>
+  <!-- Navigation, Quiz-Link und Spoiler-Schalter: einmal zentral in app.js ändern. -->
+  <header id="site-header"></header>
+
+  <!-- HIER bearbeitest du die Überschriften und Inhalte dieser Seite. -->
+  <main id="main">
+    <section class="page-title">
+      <p class="eyebrow">ARCHIVE / 02</p>
+      <h1>UNBEKANNTE ORTE.<br>UNGEAHNTE <em>KRÄFTE.</em>
+      </h1>
+      <p>Ein erster Blick auf Inseln und Teufelsfrüchte des One-Piece-Universums.</p>
+      <div class="jump">
+        <a href="#fruechte">Teufelsfrüchte ↓</a>
+        <a href="#orte">Orte ↓</a>
+      </div>
+    </section>
+    <section class="section" id="fruechte">
+      <div class="section-heading">
+        <div>
+          <p class="eyebrow">DIE KRÄFTE</p>
+          <h2>Teufelsfrüchte</h2>
+        </div>
+        <span class="issue">AUSWAHL / 02</span>
+      </div>
+      <div id="fruits" class="cards two">
+      </div>
+    </section>
+    <section class="section" id="orte">
+      <div class="section-heading">
+        <div>
+          <p class="eyebrow">DIE REISE</p>
+          <h2>Inseln & Orte</h2>
+        </div>
+        <span class="issue">AUSWAHL / 02</span>
+      </div>
+      <div id="places" class="cards two">
+      </div>
+    </section>
+  </main>
+
+  <!-- Fusszeile und Detailfenster werden ebenfalls zentral eingesetzt. -->
+  <footer id="site-footer"></footer>
+  <dialog id="details" aria-labelledby="detail-title">
+    <button class="close" type="button" aria-label="Details schliessen">×</button>
+    <div id="detail-content"></div>
+  </dialog>
+  <noscript>Bitte aktiviere JavaScript für Navigation, Karten, Suche und Filter. Die drei Seiten: <a
+      href="index.html">Start</a>, <a href="charaktere.html">Charaktere & Crews</a>, <a href="welt.html">Welt &
+      Früchte</a>.</noscript>
+</body>
+
+</html>

@@ -1,31 +1,90 @@
-<!DOCTYPE html>
-<html lang="en">
+<!doctype html>
+<html lang="de">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>LOL FANBOY</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Start · Grand Line Archive</title>
+  <link rel="stylesheet" href="style.css">
+  <!-- Nur noch EINE JavaScript-Datei: Daten oben, Funktionen darunter. -->
+  <script src="app.js" defer></script>
 </head>
 
 <body>
-    <h1>League Fan Page</h1><img src="https://www.pngarts.com/files/4/League-of-Legends-Logo-PNG-Image-Background.png"
-        alt="League Logo">
-    <h2>Nerv Blitzcrank</h2>
-    <img class="fullscreen"
-        src="https://raw.communitydragon.org/16.21/plugins/rcp-be-lol-game-data/global/default/assets/characters/blitzcrank/skins/skin01/images/blitzcrank_splash_centered_1.jpg"
-        alt="Champion Blitzcrank">
+  <a class="skip" href="#main">Zum Inhalt</a>
+  <!-- Navigation, Quiz-Link und Spoiler-Schalter: einmal zentral in app.js ändern. -->
+  <header id="site-header"></header>
 
-    <body>
-        Kai'sa is my Main
-    </body>
-    <img class="fullscreen" src="https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Kaisa_16.jpg"
-        alt="Champion Kai'sa">
-    <footer>FOR ALL MY LOL LOVERS</footer>
-    <img class="fullscreen" src="https://static.posters.cz/image/hp/60678.jpg" alt="League of Legends poster">
+  <!-- HIER bearbeitest du die Überschriften und Inhalte dieser Seite. -->
+  <main id="main">
+    <section class="hero">
+      <div class="hero-copy">
+        <p class="eyebrow">DAS INOFFIZIELLE ONE-PIECE-ARCHIV</p>
+        <h1>DEIN KURS.<br>DEIN <em>ABENTEUER.</em>
+        </h1>
+        <p class="intro">Jede Crew hat eine Geschichte. Jede Insel ein Geheimnis.<br>Entdecke die Welt hinter dem
+          Strohhut.</p>
+        <a class="button" href="charaktere.html">Die Crews entdecken <span>↗</span>
+        </a>
+        <p class="micro">CHARAKTERE / TEUFELSFRÜCHTE / ORTE</p>
+      </div>
+      <div class="chart" id="hero-visual">
+        <div id="hero-fallback" role="img" aria-label="Dekorative Seekarte mit Kompass">
+          <span class="north">
+          </span>
+          <div class="compass">✦</div>
+          <span class="chart-label">THE GRAND LINE<br>
+            <small>DEIN FAN-ARCHIV</small>
+          </span>
+        </div>
+      </div>
+    </section>
+    <section class="section">
+      <div class="section-heading">
+        <div>
+          <p class="eyebrow">WÄHLE DEINEN KURS</p>
+          <h2>Eine Welt. Unzählige Geschichten.</h2>
+        </div>
+        <span class="issue">ARCHIVE / 001</span>
+      </div>
+      <div class="category-grid">
+        <a class="category red" href="charaktere.html">
+          <span>01 / DIE MENSCHEN</span>
+          <h3>Charaktere<br>& Crews</h3>
+          <span class="arrow">↗</span>
+        </a>
+        <a class="category gold" href="welt.html#fruechte">
+          <span>02 / DIE KRÄFTE</span>
+          <h3>Teufels-<br>früchte</h3>
+          <span class="arrow">↗</span>
+        </a>
+        <a class="category blue" href="welt.html#orte">
+          <span>03 / DIE REISE</span>
+          <h3>Inseln<br>& Orte</h3>
+          <span class="arrow">↗</span>
+        </a>
+      </div>
+    </section>
+    <section class="section releases">
+      <div>
+        <p class="eyebrow">ANIME & MANGA</p>
+        <h2>Das Abenteuer geht weiter.</h2>
+        <p>Deine manuell gepflegten Episoden- und Kapitelhinweise.</p>
+      </div>
+      <div id="release-cards" class="release-cards">
+      </div>
+    </section>
+  </main>
 
-    <img src="image/images.jpeg" alt="League Defeat">
-    <H1>WE LOVE AND HATE IT</H1>
+  <!-- Fusszeile und Detailfenster werden ebenfalls zentral eingesetzt. -->
+  <footer id="site-footer"></footer>
+  <dialog id="details" aria-labelledby="detail-title">
+    <button class="close" type="button" aria-label="Details schliessen">×</button>
+    <div id="detail-content"></div>
+  </dialog>
+  <noscript>Bitte aktiviere JavaScript für Navigation, Karten, Suche und Filter. Die drei Seiten: <a
+      href="index.html">Start</a>, <a href="charaktere.html">Charaktere & Crews</a>, <a href="welt.html">Welt &
+      Früchte</a>.</noscript>
 </body>
 
 </html>
